@@ -35,7 +35,7 @@ function MovieSearch() {
   };
 
   return (
-    <div style={{ padding: '20px', fontFamily: 'Arial' }}>
+    <div style={{ padding: '20px', fontFamily: 'Arial',backgroundColor:'#fff', borderRadius:'30px'}}>
       <h2 style={{ textAlign: 'center' }}>🎬 Kino Portali</h2>
       
       {/* Qidiruv qismi */}
