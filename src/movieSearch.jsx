@@ -14,7 +14,7 @@ function MovieSearch() {
     if (!query) return;
     setLoading(true);
     try {
-      const response = await axios.get(https://www.omdbapi.com/?s=${query}&apikey=${API_KEY});
+      const response = await axios.get(`https://www.omdbapi.com/?s=${query}&apikey=${API_KEY}`);
       // https://www.omdbapi.com/?s=Marvel&apikey=25453f18
       setMovies(response.data.Search || []);
     } catch (error) {
@@ -26,7 +26,7 @@ function MovieSearch() {
   // Kinoni ustiga bosganda to'liq ma'lumot olish funksiyasi
   const getMovieDetails = async (id) => {
     try {
-      const response = await axios.get(https://www.omdbapi.com/?i=${id}&apikey=${API_KEY});
+      const response = await axios.get(`https://www.omdbapi.com/?i=${id}&apikey=${API_KEY}`);
       // https://www.omdbapi.com/?i=tt14888860&apikey=25453f18
       setSelectedMovie(response.data); // Modal oynada ko'rsatish uchun saqlaymiz
     } catch (error) {
